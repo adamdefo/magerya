@@ -1,0 +1,77 @@
+button
+	outline: none
+	cursor: pointer
+.btn
+	position: relative
+	display: inline-block
+	background-color: #ffffff
+	box-shadow: 0 10px 40px 0 rgba(60, 60, 60, 0.1);
+	border: none
+	border-radius: 14px
+	color: $btn_color
+	font-size: 1.4rem
+	font-weight: 500
+	letter-spacing: .01rem
+	padding: 2rem 2.5rem
+	text-decoration: none
+	-webkit-transition: all .25s
+	-moz-transition: all .25s
+	transition: all .25s
+	&_link
+		background-color: transparent
+		box-shadow: none
+		color: $text_color2
+	&_gold
+		background-color: #dfbf94
+		background-image: linear-gradient(285deg, #c8a77c, #dfbf94)
+		box-shadow: 0 13px 11px 0 rgba(203, 170, 127, .32)
+		color: #ffffff
+		&:hover
+			background-color: #dfbf94
+			background-image: linear-gradient(285deg, #dfbf94, #dfbf94)
+			color: #ffffff
+	& i, & span
+		display: inline-block
+		vertical-align: middle
+	& span
+		position: relative
+		margin-left: 10px
+		z-index: 2
+	&_more
+		& span
+			position: relative
+			margin-left: 0
+			margin-right: 10px
+			z-index: 2
+	&_play
+		border-radius: 50%
+		border: 7px solid #ffffff
+		width: 74px
+		height: 74px
+	&-box
+		display: inline-block
+		background-color: #f1efef
+		border-radius: 20px
+		padding: 15px
+		& .btn + .btn
+			margin-left: 10px
+.icon
+	display: inline-block
+	vertical-align: middle
+	&_play
+		background-color: #ffffff
+		width: 15px
+		height: 12px
+	&_arrow
+		background: url('../img/icons/arrow.svg') 0 0 no-repeat
+		width: 15px
+		height: 14px
+	&_consultation
+		background: url('../img/icons/consultation.svg') 0 0 no-repeat
+		width: 18px
+		height: 20px
+	&_phone-white
+		background: url('../img/icons/phone_white.svg') 0 0 no-repeat
+		width: 15px
+		height: 21px
+	

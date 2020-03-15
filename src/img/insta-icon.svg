@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>48109BB3-3791-4602-878C-2832B19E4CF0</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <radialGradient cx="31.0822437%" cy="77.4109414%" fx="31.0822437%" fy="77.4109414%" r="206.86071%" id="radialGradient-1">
+            <stop stop-color="#FF2100" offset="0%"></stop>
+            <stop stop-color="#FF5F48" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="7.69805908%" cy="-8.87861011%" fx="7.69805908%" fy="-8.87861011%" r="73.7194513%" id="radialGradient-2">
+            <stop stop-color="#044DFF" offset="0%"></stop>
+            <stop stop-color="#E800BC" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="29.1860462%" cy="100%" fx="29.1860462%" fy="100%" r="43.557853%" id="radialGradient-3">
+            <stop stop-color="#FFBC1D" offset="0%"></stop>
+            <stop stop-color="#FFDA5E" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="95.4653252%" cy="4.57361698%" fx="95.4653252%" fy="4.57361698%" r="134.431528%" id="radialGradient-4">
+            <stop stop-color="#FF11EE" offset="0%"></stop>
+            <stop stop-color="#CF3FB4" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="77.4714598%" cy="104.925819%" fx="77.4714598%" fy="104.925819%" r="100%" id="radialGradient-5">
+            <stop stop-color="#FB5D4E" offset="0%"></stop>
+            <stop stop-color="#FD5E4B" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <rect id="path-6" x="0" y="7.10542736e-15" width="50" height="50" rx="15"></rect>
+    </defs>
+    <g id="Web-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_Home_1200-Landing" transform="translate(-1045.000000, -141.000000)">
+            <g id="1" transform="translate(0.000000, 86.000000)">
+                <g id="Instagram" transform="translate(1070.000000, 80.000000) rotate(-180.000000) translate(-1070.000000, -80.000000) translate(1045.000000, 55.000000)">
+                    <g id="Rectangle">
+                        <use fill="url(#radialGradient-1)" xlink:href="#path-6"></use>
+                        <use fill="url(#radialGradient-2)" xlink:href="#path-6"></use>
+                        <use fill="url(#radialGradient-3)" xlink:href="#path-6"></use>
+                        <use fill="url(#radialGradient-4)" xlink:href="#path-6"></use>
+                        <use fill="url(#radialGradient-5)" xlink:href="#path-6"></use>
+                    </g>
+                    <g id="Group-4" transform="translate(25.000000, 25.000000) rotate(180.000000) translate(-25.000000, -25.000000) translate(16.000000, 16.000000)">
+                        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="2" x="0" y="0" width="18" height="18" rx="5"></rect>
+                        <circle id="Oval" stroke="#FFFFFF" stroke-width="2" cx="9" cy="9" r="4"></circle>
+                        <circle id="Oval-Copy" fill="#FFFFFF" cx="14" cy="4" r="1"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
