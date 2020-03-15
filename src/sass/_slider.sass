@@ -3,6 +3,7 @@
   transition: all ease-in-out .3s
 .slick-active
   opacity: .5
+  outline: none
 .slick-current
   opacity: 1
 
@@ -15,55 +16,56 @@
     height: 200px
     margin: 0 15px
 
-.team-slider__slider
-  height: 300px
-.team-slider__caption
-  position: relative
-  text-align: center
-  & .label
-    color: #4a4743
-    font-size: 1.4rem
-    line-height: 1.5
-  & .ttl
-    margin-bottom: 20px
-.team-slider__arrows
-  display: flex
-  position: relative
-  align-items: center
-  justify-content: center
-  width: 100%
-.team-slider__arrow
-  position: absolute
-  display: flex
-  align-items: center
-  justify-content: center
-  top: 0
-  background-color: #f4f1ed
-  border: 0
-  border-radius: 15px
-  cursor: pointer
-  padding: 0
-  height: 50px
-  width: 50px
-  outline: none
-  z-index: 10
-  -webkit-transition: background-color .25s
-  -moz-transition: background-color .25s
-  transition: background-color .25s
-  @media (max-width: 991px)
-    margin-top: -145px
-  &:before
-    content: ''
-    display: block
-    background: url('../img/icons/arrow-gray.svg') center center no-repeat
-    height: 14px 
-    width: 14px 
-  &_prev
-    left: 0
+.team-slider
+  &__slider
+    height: 300px
+  &__caption
+    position: relative
+    text-align: center
+    & .label
+      color: #4a4743
+      font-size: 1.4rem
+      line-height: 1.5
+    & .ttl
+      margin-bottom: 20px
+  &__arrows
+    display: flex
+    position: relative
+    align-items: center
+    justify-content: center
+    width: 100%
+  &__arrow
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    top: 0
+    background-color: #f4f1ed
+    border: 0
+    border-radius: 15px
+    cursor: pointer
+    padding: 0
+    height: 50px
+    width: 50px
+    outline: none
+    z-index: 10
+    -webkit-transition: background-color .25s
+    -moz-transition: background-color .25s
+    transition: background-color .25s
+    @media (max-width: 991px)
+      margin-top: -145px
     &:before
-      transform: rotate(180deg)
-  &_next
-    right: 0
+      content: ''
+      display: block
+      background: url('../img/icons/arrow-gray.svg') center center no-repeat
+      height: 14px 
+      width: 14px 
+    &_prev
+      left: 0
+      &:before
+        transform: rotate(180deg)
+    &_next
+      right: 0
 
 
 .slider
