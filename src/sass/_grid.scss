@@ -123,7 +123,7 @@ $breakpoints: (
 
 .offset {
   position: relative;
-  &-unshift { // отступ слева
+  &-left { // отступ слева
     @for $i from 1 through ($count-col - 1) {
       &-#{$i} {
         @media (min-width: 992px) {
@@ -132,7 +132,7 @@ $breakpoints: (
       }
     }
   }
-  &-push {
+  &-right {
     @for $i from 1 through ($count-col - 1) {
       &-#{$i} { // отступ справа
         @media (min-width: 992px) {

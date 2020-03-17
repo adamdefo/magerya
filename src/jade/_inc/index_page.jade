@@ -94,17 +94,25 @@ section.section.section_team
     .team-slider
       .team-slider__slider
         .team__item
-          img(src="img/slide@2x.jpg")
+          div
+            img.default(src="img/team/team1.png")
+            img.colorful(src="img/team/colorful/team1.png")
         .team__item
-          img(src="img/slide@2x.jpg")
+          div
+            img.default(src="img/team/team2.png")
+            img.colorful(src="img/team/colorful/team2.png")
         .team__item
-          img(src="img/slide@2x.jpg")
+          div
+            img.default(src="img/team/team3.png")
+            img.colorful(src="img/team/colorful/team3.png")
         .team__item
-          img(src="img/slide@2x.jpg")
+          div
+            img.default(src="img/team/team4.png")
+            img.colorful(src="img/team/colorful/team4.png")
         .team__item
-          img(src="img/slide@2x.jpg")
-        .team__item
-          img(src="img/slide@2x.jpg")
+          div
+            img.default(src="img/team/team5.png")
+            img.colorful(src="img/team/colorful/team5.png")
       .team-slider__arrows
         .team-slider__caption
           .label Директор
@@ -205,10 +213,12 @@ section.section.section_how-to-work.section_how-to-work_list
           p А если этого бывает недостаточно, в ряде случаев, подключается <b>лекарственная</b> и <b>гармозаместительная</b> терапия. На основании биохимических показателей крови врач дает индивидуальные рекомендации по сбалансированному питанию, физической нагрузке, гигиене, витаминотерапии и образу жизни.
       .img
         .img-icon
+          img(src="./img/icons/doctor-icon.svg")
         img(src="./img/doctor@2x.jpg")
     .item
       .img
         .img-icon
+          img(src="./img/icons/30-days-icon.svg")
         img(src="./img/30-days@2x.jpg")
       .col-5
         .ttl.ttl_h3 30 дней сопровождения
@@ -225,6 +235,7 @@ section.section.section_how-to-work.section_how-to-work_list
     .item
       .img
         .img-icon
+          img(src="./img/icons/online-icon.svg")
         img(src="./img/online@2x.jpg")
       .col-5
         .ttl.ttl_h3 Без очередей
@@ -277,4 +288,36 @@ section.section.section_faqs
       h2.ttl.ttl_h2 Нас часто спрашивают
     .row
       .col.col-12
-        .faqs
+        .faqs.js-faqs
+          ul.faqs__list
+            li.faqs__item
+              .faqs__title 
+                div Кто будет меня консультировать?
+              .faqs__content Ведущую роль в восстановлении и поддержании своих пацеентов, клиника уделяет микро и макро элементам позволяющим восстановить биохимические и гормональные показатели. А если этого бывает недостаточно, в ряде случаев, подключается ликарственная и гармозаместительная терапия.
+            li.faqs__item
+              .faqs__title
+                div Как долго ждать ответа доктора?
+              .faqs__content Ведущую роль в восстановлении и поддержании своих пацеентов, клиника уделяет микро и макро элементам позволяющим восстановить биохимические и гормональные показатели. А если этого бывает недостаточно, в ряде случаев, подключается ликарственная и гармозаместительная терапия.
+            li.faqs__item
+              .faqs__title
+                div Нужно ли сдавать анализы заранее?
+              .faqs__content Ведущую роль в восстановлении и поддержании своих пацеентов, клиника уделяет микро и макро элементам позволяющим восстановить биохимические и гормональные показатели. А если этого бывает недостаточно, в ряде случаев, подключается ликарственная и гармозаместительная терапия.
+
+section.section.section_partners
+  .container
+    .section__title
+      h2.ttl.ttl_h2 Бланки-направления со скидками
+      .subttl При направлении из нашей клиники в дружественные лаборатории расположенные <br>по всей России, вы получите <b>скидку от 10% до 20%</b>
+    .lab-list
+      .lab
+        img(src="./img/partners/gemotest.png")
+      .lab
+        img(src="./img/partners/medlife.png")
+      .lab
+        img(src="./img/partners/arhimed.png")
+      .lab
+        img(src="./img/partners/invitro.png")
+
+section.section.section_statistic
+  .container
+    .row

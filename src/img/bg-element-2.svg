@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="533px" height="627px" viewBox="0 0 533 627" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>4549B3A1-78D5-4A8A-9DDF-363D8F7EF67C</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="1.42108547e-12%" y1="0%" x2="42.3811673%" y2="57.3807883%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.703534747" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Web-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_Home_1200-Landing" transform="translate(-791.000000, -3876.000000)" stroke="url(#linearGradient-1)" stroke-width="5">
+            <g id="4" transform="translate(0.000000, 2400.000000)">
+                <g id="Group-17-Copy-2-+-Group-17-Copy-3-Mask">
+                    <g id="bg-element-2" transform="translate(905.500000, 1789.500000) scale(1, -1) rotate(-180.000000) translate(-905.500000, -1789.500000) translate(490.000000, 1478.000000)">
+                        <path d="M0,0.587551556 L141.440376,0.587551556 C306.390218,0.587551556 460.726672,81.9412671 553.94365,218.025967 L831,622.492313 L0,622.492313 L0,0.587551556 Z" id="Rectangle"></path>
+                        <path d="M40,39.7626547 L158.92173,39.7626547 C314.086949,39.7626547 460.459078,111.800655 555.113474,234.751013 L831,593.110986 L40,593.110986 L40,39.7626547 Z" id="Rectangle-Copy-9"></path>
+                        <path d="M80,78.9377578 L178.75088,78.9377578 C322.564572,78.9377578 459.414722,140.86221 554.344564,248.893239 L831,563.729659 L80,563.729659 L80,78.9377578 Z" id="Rectangle-Copy-10"></path>
+                        <path d="M120,118.112861 L201.280654,118.112861 C331.881424,118.112861 457.298545,169.212649 550.71161,260.484552 L831,534.348331 L120,534.348331 L120,118.112861 Z" id="Rectangle-Copy-11"></path>
+                        <path d="M160,157.287964 L226.86196,157.287964 C342.073808,157.287964 453.750743,197.075784 543.008698,269.923484 L831,504.967004 L160,504.967004 L160,157.287964 Z" id="Rectangle-Copy-12"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

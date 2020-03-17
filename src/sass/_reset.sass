@@ -1,0 +1,42 @@
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
++keyframes(fadeUp)
+  0%
+    opacity: 0
+    transform: translate3d(0, 30px, 0)
+  100%
+    transform: translate3d(0, 0, 0)
+
+html
+  font-size: 10px
+
+html, body
+  height: 100%
+
+body
+  background: #FFFFFF
+  color: $text_color
+  font: 400 14px/1.35 $ff
+  margin: 0
+  padding: 0
+
+a
+  color: $link_color
+  text-decoration: none
+  outline: none
+  -webkit-transition: all .25s
+  -moz-transition: all .25s
+  transition: all .25s
+  &:hover
+    color: $link_color_hover
+
+img
+  max-width: 100%
+  height: auto
+
+p
+  font-size: 1.4rem
+  line-height: 2.2rem

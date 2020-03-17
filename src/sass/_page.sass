@@ -1,0 +1,74 @@
+.page
+  & .container
+    max-width: 800px
+  &__header
+    position: relative
+    width: 100%
+    &_article
+      background: url('../img/banner@2x.jpg') center center no-repeat
+      background-size: contain
+      padding: 100px 0 70px
+      height: 381px
+    &_team
+      background-image: radial-gradient(circle at 43% 59%, rgba(250, 248, 245, 0), #faf8f5 73%)
+      padding: 74px 0 70px
+      height: 314px
+      & .container
+        height: 100%
+        &:after
+          position: absolute
+          bottom: -70px
+          right: -180px
+          background: url('../img/page_header_bg_team.svg') 0 0 no-repeat
+          width: 532px
+          height: 238px
+  &__title
+    & .subttl
+      color: #4a4743
+      font-size: 1.6rem
+      line-height: 2.5rem
+      margin-top: 15px
+    & .btn-box
+      background-color: transparent
+      margin-top: 20px
+      padding: 0
+      & .btn
+        color: #9d978f
+        padding: 18px 20px
+  &__img
+    position: absolute
+    bottom: -102px
+    right: 0
+    line-height: 0
+    width: 272px
+    z-index: 10
+  &__body
+    padding-top: 3.5rem
+    & .ttl
+      margin: 4.5rem 0
+    & p
+      font-size: 2rem
+      line-height: 3rem
+      margin-bottom: 3rem
+      & + .ttl
+        margin-top: 6rem
+  &__feedback
+    & .container
+      max-width: 1000px
+
+.list-box
+  & .box
+    display: flex
+    background-image: radial-gradient(circle at 43% 59%, rgba(250, 248, 245, 0), #faf8f5 75%)
+    border-radius: 20px
+    margin: 20px 0
+    padding: 30px
+    & .img
+      line-height: 0
+      margin-right: 25px
+      width: 100px
+      height: 100px
+    & .ttl
+      font-size: 2rem
+      line-height: 3rem
+      margin: 0 0 10px

@@ -1,0 +1,240 @@
+.service
+  position: relative
+  text-align: center
+  margin: 30px 0
+  &__picture
+    height: 200px
+    text-align: center
+    & img
+      width: auto
+      max-width: auto
+      height: 100%
+  &__title
+    position: relative
+    font-size: 2rem
+    line-height: 1.5
+    color: $text_color
+    z-index: 10
+    -webkit-transition: all .25s
+    -moz-transition: all .25s
+    transition: all .25s
+  &:hover
+    .service
+      &__title
+        color: $link_color_hover
+  &__readmore
+    position: relative
+    margin-top: -50px
+    text-align: center
+    & button
+      background-image: linear-gradient(315deg, #c8a77c, #dfbf94)
+      border: 10px solid #ffffff
+      border-radius: 50%
+      padding: 0
+      width: 80px
+      height: 80px
+      &:after
+        content: ''
+        background: url('../img/icons/arrow.svg') center center no-repeat
+        display: block
+        width: 100%
+        height: 100%
+
+.video-list
+  &__item
+    padding: 0 17px
+
+.video
+  &__frame
+    position: relative
+    background-color: #dedede
+    border-radius: 15px
+    margin-bottom: 20px
+    height: 166px
+  &__youtube
+    margin: 40px 0 0
+  &__play
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    margin: -37px 0 0 -37px
+    width: 74px
+    height: 74px
+  &__title
+    display: flex
+    justify-content: flex-start
+    align-items: normal
+  &__channel
+    display: flex
+    flex: 1 0 auto
+    width: 50px
+    height: 50px
+    background-color: #dedede
+    border-radius: 50%
+    margin-right: 15px
+
+.step
+  border-radius: 15px
+  position: relative
+  padding: 30px
+  text-align: center
+  -webkit-transition: .35s
+  -moz-transition: .35s
+  transition: .35s
+  &:hover
+    background-color: #ffffff
+    box-shadow: 0 19px 55px 0 rgba(60, 60, 60, 0.1)
+  &__icon
+    display: inline-block
+    background-color: #eed4ab
+    background-image: linear-gradient(308deg, #eed4ab 84%, #fcecd4 13%)
+    border-radius: 50%
+    margin-bottom: 15px
+    opacity: 0.65
+    width: 95px
+    height: 95px
+  .step__ttl
+    margin-bottom: 12px
+  & .txt
+    color: $text_color2
+    line-height: 2.2rem
+
+.item
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 70px
+  & .ttl
+    margin-bottom: 20px
+  & .txt
+    color: #4a4743
+    p
+      font-size: 1.6rem
+      line-height: 2.5rem
+  & .img
+    position: relative
+    width: 360px
+    margin-left: 55px
+    & > img
+      border-radius: 0 100px 0 100px
+    &-icon
+      display: flex
+      align-items: center
+      justify-content: center
+      background-color: #ffffff
+      border-radius: 15px 0 15px 0
+      position: absolute
+      top: 0
+      left: -35px
+      width: 70px
+      height: 70px
+  &:nth-child(2n)
+    & .img
+      margin-left: 0
+      margin-right: 55px
+      & > img
+         border-radius: 100px 0 100px 0
+      &-icon
+        border-radius: 0 15px 0 15px
+        left: auto
+        right: -35px
+  &_profilacticum
+    margin-bottom: 0
+    & .img
+      width: 468px
+      margin-left: 55px
+      & img
+        border-radius: 0
+    & .btn-box
+      background-color: transparent
+      padding: 0
+
+.feedback
+  display: flex
+  background-image: linear-gradient(300deg, #c8a77c 100%, #dfbf94 21%)
+  border-radius: 100px 0 100px 0
+  color: #ffffff
+  padding: 52px 30px 66px 100px
+  &__wrapper
+    display: flex
+    justify-content: center
+  &__avatar
+    width: 100px
+    margin-right: 35px
+  & .ttl, & .subttl
+    color: #ffffff
+  &__btn-box
+    margin-top: 20px
+    & .btn + .btn
+      margin-left: 20px
+
+.instagram
+  background: url('../img/instagram-bg@2x.png') center center no-repeat
+  background-size: contain
+  border-radius: 0 100px 0 100px
+  color: #ffffff
+  padding: 60px 15px
+  &__wrapper
+    display: flex
+    justify-content: center
+    text-align: center
+  & .ttl
+    margin-bottom: 15px
+  & .ttl, & .subttl
+    color: #ffffff
+  &__btn-box
+    margin-top: 20px
+    & .btn + .btn
+      margin-left: 20px
+
+
+.faqs
+  max-width: 770px
+  margin: 0 auto
+  &__list
+    list-style: none
+    margin: 0
+    padding: 0
+  &__item
+    border-bottom: 2px solid #f4f1ed
+    margin-bottom: 20px
+    padding-bottom: 15px
+    &._opened
+      & .faqs__title
+        &:after
+          background-image: linear-gradient(0deg, #22201d, #22201d)
+      & .faqs__content
+        display: block
+  &__title
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-size: 2rem
+    line-height: 3rem
+    &:after
+      content: ''
+      display: flex
+      box-shadow: 0 13px 11px 0 rgba(203, 170, 127, 0.32)
+      background-image: linear-gradient(315deg, #c8a77c, #dfbf94)
+      border-radius: 50%
+      width: 40px
+      height: 40px
+      transition: background-color .25s
+    &:hover
+      cursor: pointer
+  &__content
+    display: none
+    font-size: 1.6rem
+    line-height: 2.5rem
+    padding-top: 15px
+
+
+
+.lab-list
+  display: flex
+  justify-content: center
+  align-items: center
+.lab
+  margin: 0 15px
+  width: 220px
