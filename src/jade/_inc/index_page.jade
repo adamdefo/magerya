@@ -11,7 +11,7 @@ section.section.section_promo
             a.btn.btn_gold(href="#")
               i.icon.icon_phone-white
               span Связаться с нами
-      .col.col-7.col-hidden-xs
+      .col.col-7.col-xs-12.col-hidden-xs
         .msg.msg_1 Врач эксперт 1-ого канала в передаче «<span class="gold">доброе утро</span>»
         .msg.msg_2 
           div
@@ -19,6 +19,9 @@ section.section.section_promo
             div Илья Магеря, известный эндокринолог #1 в области создания благоприятных условий для зачатия и вынашивания ребёнка
         .msg.msg_3 Создатель фонда студентов <span class="gold">M-students</span>
         .msg.msg_4 Автор приложений <a href="#" target="_blank">Мамагеря</a> и <a href="#" target="_blank">Профилактикум</a>
+    .row
+      .promo-img.col.col-12
+        img(src="./img/main_promo_xs.jpg")
 
 section.section.section_services
   .container
@@ -167,7 +170,8 @@ section.section.section_video
             div
               div.ttl.ttl_h4 Доброе утро. Фрагмент выпуска от 17.09.2019
               a(href="https://www.1tv.ru/-/gfsux" target="_blank") https://www.1tv.ru/-/gfsux
-    .row.video__youtube
+    //- блок с ссылкой на канал  youtube
+    .row.video__youtube.col-hidden-xs
       .col.col-12
         img(src="./img/youtube-bg@2x.png")
 
@@ -268,8 +272,8 @@ section.section.section_how-to-work.section_how-to-work_list
 section.section.section_feedback
   .container
     .feedback__wrapper
-      .col-9.feedback
-        .feedback__avatar
+      .col-9.col-xs-12.feedback
+        .feedback__avatar.col-hidden-xs
           img(src="./img/photo-svetlana@2x.png")
         .feedback__content
           .ttl.ttl_h3 Моисеева Светлана <br>ответит на ваши вопросы
@@ -283,7 +287,7 @@ section.section.section_profilacticum
     .row
       .col.col-12
         .item.item_profilacticum
-          .col-5
+          .col-5.col-xs-12
             .ttl.ttl_h3 Консультация без оплаты
             .txt
               p Наша клиника разработала мобильное приложение, которое анализирует биометрические и биохимичские показатели крови и умееть выявлять факторы риска по каждому анализу , давать рекомендации по питанию, физическим нагрузками и предлагать витаминотерапия для коррекции покатезей при лекгих паталогиях. Сайт приложения <a href="http://profilaktikum.com">profilaktikum.com</a>
@@ -293,18 +297,18 @@ section.section.section_profilacticum
                   img(src="./img/appstore.png")
                 a(href="", target="_black")
                   img(src="./img/google-play.png")
-          .img
+          .img.col-hidden-xs
             img(src="./img/app@2x.png")
 
-section.section.section_instagram.col-hidden-xs
+section.section.section_instagram
   .container
     .instagram__wrapper
-      .col-10.instagram
+      .col-10.col-xs-12.instagram
         .instagram__content
           .ttl.ttl_h3 Благотворительные консультации
           .subttl Благотворительные консультации каждый <br>вторник в прямом эфире instagram
-          .instagram__btn-box
-            a.btn(href="https://www.instagram.com/magerya_endocrinolog_/", target="_black")
+          a(href="https://www.instagram.com/magerya_endocrinolog_/", target="_black")
+            .instagram__btn-box
               img(src="./img/inst/instagram-button@2x.png")
         .insta-pic.insta-pic_1
           img(src="./img/inst/inst-4@2x.png")

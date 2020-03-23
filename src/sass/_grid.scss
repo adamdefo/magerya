@@ -121,9 +121,10 @@ $breakpoints: (
     }
   }
   &-show {
+    display: block;
     &-xs {
       @media (max-width: 575px) {
-        display: block
+        display: block;
       }
     }
   }
