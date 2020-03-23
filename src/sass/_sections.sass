@@ -12,6 +12,12 @@
       background-repeat: no-repeat;
       background-size: cover;
       height: 100%;
+    @media(max-width: 575px)
+      height: auto
+      // padding-top: 300px
+      & .container
+        background-image: url(../img/main_promo_xs.jpg);
+        height: 100vh
     & .btn-box
       margin-top: 12px
     & .msg
@@ -56,17 +62,17 @@
     //   height: 100%;
     //   width: 100px;
   &_services
-    padding: 100px 0 50px
+    padding: 50px 0 25px
   &_team
-    padding: 50px 0 100px
+    padding: 25px 0 50px
   &_video
     background-color: #faf8f5
-    padding: 100px 0 50px
+    padding: 50px 0 25px
     & .container
       padding: 0 50px
   &_how-to-work
     background-color: #faf8f5
-    padding: 50px 0 50px
+    padding: 25px 0 25px
     &_list
       padding-bottom: 150px
     & .container
@@ -79,11 +85,11 @@
     padding-top: 85px
     padding-bottom: 50px
   &_instagram
-    padding: 50px 0 100px
+    padding: 25px 0 50px
   &_faqs
-    padding: 50px 0 80px
+    padding: 25px 0 40px
     & .section__title
-      margin-bottom: 40px
+      margin-bottom: 20px
   &_partners
     background-color: #faf8f5
     padding: 100px 0
@@ -95,4 +101,5 @@
         font-size: 1.6rem
         line-height: 2.5rem
   &_statistic
-    padding: 50px 0
+    margin-bottom: -20px
+    padding: 100px 0 0

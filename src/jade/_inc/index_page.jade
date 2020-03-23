@@ -1,7 +1,7 @@
 section.section.section_promo
   .container.container_flex
     .row.row_flex
-      .col.col-5
+      .col.col-5.col-xs-12
         div
           .ttl.ttl_promo Консультации по гормональному здоровью <span class="gold">онлайн</span> доктора И.Ю. Магеря
           .btn-box
@@ -11,7 +11,7 @@ section.section.section_promo
             a.btn.btn_gold(href="#")
               i.icon.icon_phone-white
               span Связаться с нами
-      .col.col-7
+      .col.col-7.col-hidden-xs
         .msg.msg_1 Врач эксперт 1-ого канала в передаче «<span class="gold">доброе утро</span>»
         .msg.msg_2 
           div
@@ -25,7 +25,7 @@ section.section.section_services
     .section__title
       h2.ttl.ttl_h2 Список заболеваний, которые <br><span class="gold">мы помогаем решить</span>
     .row
-      .col.col-3
+      .col.col-3.col-hidden-xs
         a(href="#")
           .service
             .service__picture
@@ -33,16 +33,25 @@ section.section.section_services
             .service__readmore
               button(type="button")
             .service__title Кожные <br>заболевания
-
-      .col.col-6
+      .col.col-6.col-xs-12
         a(href="#")
           .service
             .service__picture
+              .tag
+                span Экспертная область
               img(src="img/services/svc-2@2x.jpg")
             .service__readmore
               button(type="button")
             .service__title Консультация в области зачатие, вынашивание <br>и рождение здорового ребенка
-      .col.col-3
+      .col.col-3.col-xs-12.col-hidden.col-show-xs
+        a(href="#")
+          .service
+            .service__picture
+              img(src="img/services/svc-1@2x.jpg")
+            .service__readmore
+              button(type="button")
+            .service__title Кожные <br>заболевания
+      .col.col-3.col-xs-12
         a(href="#")
           .service
             .service__picture
@@ -51,7 +60,7 @@ section.section.section_services
               button(type="button")
             .service__title Энергия
     .row
-      .col.col-3
+      .col.col-3.col-xs-12
         a(href="#")
           .service
             .service__picture
@@ -59,7 +68,7 @@ section.section.section_services
             .service__readmore
               button(type="button")
             .service__title Гормональный <br>фон
-      .col.col-3
+      .col.col-3.col-xs-12
         a(href="#")
           .service
             .service__picture
@@ -67,7 +76,7 @@ section.section.section_services
             .service__readmore
               button(type="button")
             .service__title Качество <br>сна
-      .col.col-3
+      .col.col-3.col-xs-12
         a(href="#")
           .service
             .service__picture
@@ -75,7 +84,7 @@ section.section.section_services
             .service__readmore
               button(type="button")
             .service__title Коррекция <br>веса
-      .col.col-3
+      .col.col-3.col-xs-12
         a(href="#")
           .service
             .service__picture
@@ -83,9 +92,9 @@ section.section.section_services
             .service__readmore
               button(type="button")
             .service__title Психо-эмоциональное <br>состояние
-    .row.loadmore
-      .col.col-12.txt-center
-        a.btn.btn_gold(href="#") Показать всё
+    //- .row.loadmore
+    //-   .col.col-12.txt-center
+    //-     a.btn.btn_gold(href="#") Показать всё
 
 section.section.section_team
   .container
@@ -116,7 +125,7 @@ section.section.section_team
       .team-slider__arrows
         .team-slider__caption
           .label Директор
-          .ttl.ttl_h3 Горенко Даниил
+          .ttl.ttl_h3 Илья Магеря
           a.btn.btn_gold.btn_more(href="#")
             span Подробнее 
             i.icon.icon_arrow
@@ -128,7 +137,7 @@ section.section.section_video
     .section__title
       h2.ttl.ttl_h2 Видео с нами
     .row 
-      .col.col-4
+      .col.col-4.col-xs-12
         .video-list__item
           .video__frame
             .video__play
@@ -138,7 +147,7 @@ section.section.section_video
             div
               div.ttl.ttl_h4 Доброе утро. Фрагмент выпуска от 17.09.2019
               a(href="https://www.1tv.ru/-/gfsux" target="_blank") https://www.1tv.ru/-/gfsux
-      .col.col-4
+      .col.col-4.col-xs-12
         .video-list__item
           .video__frame
             .video__play
@@ -148,7 +157,7 @@ section.section.section_video
             div
               div.ttl.ttl_h4 Доброе утро. Фрагмент выпуска от 17.09.2019
               a(href="https://www.1tv.ru/-/gfsux" target="_blank") https://www.1tv.ru/-/gfsux
-      .col.col-4
+      .col.col-4.col-xs-12
         .video-list__item
           .video__frame
             .video__play
@@ -168,45 +177,57 @@ section.section.section_how-to-work
       h2.ttl.ttl_h2 Как это работает
       .subttl Смотрите в последовательности от регистрации до консультации у врача
     .row
-      .col.col-4
+      .col.col-4.col-xs-12
         .step
           .step__icon
+            div
+              img(src="./img/steps/login.svg")
           .step__ttl.ttl.ttl_h4 Простая регистрация
           .txt Вы мгновенно имеете доступ к услугам, получив код подтверждения на свой номер телефона!
-      .col.col-4
+      .col.col-4.col-xs-12
         .step
           .step__icon
+            div
+              img(src="./img/steps/credit-card.svg")
           .step__ttl.ttl.ttl_h4 Оплата консультации
           .txt Нажмите на кнопку «Записаться на консультацию» и выберите подходящий формат услуги. Для оплаты Вы будете перенаправлены
-      .col.col-4
+      .col.col-4.col-xs-12
         .step
           .step__icon
+            div
+              img(src="./img/steps/contract.svg")
           .step__ttl.ttl.ttl_h4 Заполнение анкеты
           .txt Вам будет предложено заполнить анкету здоровья первичного приема. После заполнения анкеты первичного приема необходимо
     .row
-      .col.col-4
+      .col.col-4.col-xs-12
         .step
           .step__icon
+            div
+              img(src="./img/steps/graph.svg")
           .step__ttl.ttl.ttl_h4 Анализ истории болезни
           .txt Доктор знакомится с Вашей анкетой и анализами в течение 2-х рабочих суток, не считая дня заполнения анкеты, с момента их получения
-      .col.col-4
+      .col.col-4.col-xs-12
         .step
           .step__icon
+            div
+              img(src="./img/steps/event.svg")
           .step__ttl.ttl.ttl_h4 Дата консультации
           .txt После получения всех необходимых результатов первичных/повторных анализов и/или дополнительных обследований назначается дата
-      .col.col-4
+      .col.col-4.col-xs-12
         .step
           .step__icon
+            div
+              img(src="./img/steps/doctor.svg")
           .step__ttl.ttl.ttl_h4 Прием у врача
           .txt Письменные рекомендации. В назначенный день доктор направляет письменные рекомендации в развернутом виде.
-    .row.loadmore
-      .col.col-12.txt-center
-        a.btn.btn_gold(href="#") Скачать инструкцию
+    //- .row.loadmore
+    //-   .col.col-12.txt-center
+    //-     a.btn.btn_gold(href="#") Скачать инструкцию
 
 section.section.section_how-to-work.section_how-to-work_list
   .container
     .item
-      .col-5
+      .col-5.col-xs-12
         .ttl.ttl_h3 Подход к лечению
         .txt
           p Ведущую роль в восстановлении и поддержании своих пацеентов, клиника уделяет <b>микро и макро элементам</b> позволяющим восстановить биохимические и гормональные показатели.
@@ -216,32 +237,33 @@ section.section.section_how-to-work.section_how-to-work_list
           img(src="./img/icons/doctor-icon.svg")
         img(src="./img/doctor@2x.jpg")
     .item
+      .col-5.col-xs-12
+        .ttl.ttl_h3 30 дней сопровождения
+        .txt
+          p На протяжении 30 дней после получения рекомендаций, <b>врач отвечает на все вопросы пациентов</b>, для пациентов забеременневших в ходе или после консультации дается 60 дней и более активной наблюдение.
       .img
         .img-icon
           img(src="./img/icons/30-days-icon.svg")
         img(src="./img/30-days@2x.jpg")
-      .col-5
-        .ttl.ttl_h3 30 дней сопровождения
-        .txt
-          p На протяжении 30 дней после получения рекомендаций, <b>врач отвечает на все вопросы пациентов</b>, для пациентов забеременневших в ходе или после консультации дается 60 дней и более активной наблюдение.
     .item
-      .col-5
+      .col-5.col-xs-12
         .ttl.ttl_h3 Расширенные рекомендации
         .txt
           p Вы получаете подробные инструкции с видео объяснением выявленных факторов рисков по вашему здоровью.  Индивидуальную программу питания. Программу витаминотерапии и набор физических упражнений.
       .img
         .img-icon
+          img(src="./img/icons/heart-icon.svg")
         img(src="./img/profile@2x.jpg")
     .item
-      .img
-        .img-icon
-          img(src="./img/icons/online-icon.svg")
-        img(src="./img/online@2x.jpg")
-      .col-5
+      .col-5.col-xs-12
         .ttl.ttl_h3 Без очередей
         .txt
           p Услуга предполагает собой удобный онлайн формат в чате в личном кабинете пациента на сайте или в мобильном приложении. Подробные рекомендации включает в себя видео с объяснениями факторов риска, комментарии по анализам, ссылки на препараты, программу сбалансированного питания, упражнения.
           p Все данные надежно защещены и хранятся в доступной для клиента медицинской карте со всеми рекомендациями и динамикой сданых анализов.
+      .img
+        .img-icon
+          img(src="./img/icons/online-icon.svg")
+        img(src="./img/online@2x.jpg")
 
 section.section.section_feedback
   .container
@@ -267,20 +289,29 @@ section.section.section_profilacticum
               p Наша клиника разработала мобильное приложение, которое анализирует биометрические и биохимичские показатели крови и умееть выявлять факторы риска по каждому анализу , давать рекомендации по питанию, физическим нагрузками и предлагать витаминотерапия для коррекции покатезей при лекгих паталогиях. Сайт приложения <a href="http://profilaktikum.com">profilaktikum.com</a>
               p Карманный эндокринолог по ссылке ниже:
               .btn-box
-                a.btn.btn_gold(href="", target="_black") App Store
-                a.btn.btn_gold(href="", target="_black") Play Market
+                a(href="", target="_black")
+                  img(src="./img/appstore.png")
+                a(href="", target="_black")
+                  img(src="./img/google-play.png")
           .img
             img(src="./img/app@2x.png")
 
-section.section.section_instagram
+section.section.section_instagram.col-hidden-xs
   .container
     .instagram__wrapper
-      .col-9.instagram
+      .col-10.instagram
         .instagram__content
           .ttl.ttl_h3 Благотворительные консультации
           .subttl Благотворительные консультации каждый <br>вторник в прямом эфире instagram
           .instagram__btn-box
-            a.btn(href="", target="_black") magerya_endocrinolog_
+            a.btn(href="https://www.instagram.com/magerya_endocrinolog_/", target="_black")
+              img(src="./img/inst/instagram-button@2x.png")
+        .insta-pic.insta-pic_1
+          img(src="./img/inst/inst-4@2x.png")
+        .insta-pic.insta-pic_2
+          img(src="./img/inst/inst-3@2x.png")
+        .insta-pic.insta-pic_3
+          img(src="./img/inst/inst-2@2x.png")
 
 section.section.section_faqs
   .container
@@ -320,4 +351,40 @@ section.section.section_partners
 
 section.section.section_statistic
   .container
-    .row
+    .stats-wrapper
+      .stats-wrapper__item
+        .stats
+          .stats__item
+            .stats__head
+              .stats__number 880
+              .stats__subttl Беременных
+            .stats__bar
+              .bar
+                .bar__progress.bar__progress_1
+                .bar__label за 2018 год
+          .stats__item
+            .stats__head
+              .stats__number 1130
+              .stats__subttl Беременных
+            .stats__bar
+              .bar
+                .bar__progress.bar__progress_2
+                .bar__label за 2019 год
+          .stats__item
+            .stats__head
+              .stats__number 252
+              .stats__subttl Беременных
+            .stats__bar
+              .bar
+                .bar__progress.bar__progress_3
+                .bar__label за 2020 год
+      .stats-wrapper__item.stats-wrapper__item_map
+        div
+          .stats__item
+            .stats__head
+              .stats__number 45
+              .stats__subttl Стран в которых есть <br>наши пациенты
+          .stats__item
+            .stats__head
+              .stats__number 2
+              .stats__subttl Мобильных приложений <br>в топ-чартах Apple & Google store
