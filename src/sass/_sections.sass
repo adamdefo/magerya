@@ -89,14 +89,19 @@
   &_how-to-work
     background-color: #faf8f5
     padding: 25px 0 25px
+    z-index: 10
+    & .col:hover
+      z-index: 10
     &_list
       padding-bottom: 150px
+      z-index: 9
     & .container
       padding: 0 50px
     & .section__title
       margin-bottom: 8px
   &_feedback
     margin-top: -150px
+    z-index: 15
     @media(max-width: 575px)
       background-image: linear-gradient(300deg, #c8a77c 100%, #dfbf94 21%)
   &_profilacticum
@@ -110,13 +115,13 @@
     @media(max-width: 575px)
       background: url('../img/instagram-bg.png') center center no-repeat
       background-size: cover
-      padding: 50px 25px 25px
+      padding: 50px 0 25px
   &_faqs
-    padding: 25px 0 40px
+    padding: 70px 0 40px
     @media(max-width: 575px)
       padding: 50px 0
     & .section__title
-      margin-bottom: 20px
+      margin-bottom: 40px
   &_partners
     background-color: #faf8f5
     padding: 100px 0

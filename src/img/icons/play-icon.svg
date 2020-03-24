@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="22px" viewBox="0 0 18 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>play icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="1200" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_Home_1200-Landing" transform="translate(-1077.000000, -6988.000000)" fill="#FFFFFF">
+            <g id="8" transform="translate(181.000000, 6730.000000)">
+                <path d="M908.515331,262.86974 L915.987273,274.365035 C916.890239,275.754214 916.496086,277.612365 915.106907,278.515331 C914.620276,278.831641 914.05234,279 913.471942,279 L898.528058,279 C896.871204,279 895.528058,277.656854 895.528058,276 C895.528058,275.419602 895.696417,274.851666 896.012727,274.365035 L903.484669,262.86974 C904.387635,261.480561 906.245786,261.086408 907.634965,261.989374 C907.986755,262.218037 908.286668,262.51795 908.515331,262.86974 Z" id="play-icon" transform="translate(906.000000, 269.000000) rotate(-270.000000) translate(-906.000000, -269.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

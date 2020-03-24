@@ -44,10 +44,21 @@ button
 			margin-right: 10px
 			z-index: 2
 	&_play
+		position: relative
 		border-radius: 50%
 		border: 7px solid #ffffff
 		width: 74px
 		height: 74px
+		&:before
+			content: ''
+			background: url('../img/icons/play-icon.svg') center center no-repeat
+			position: absolute
+			width: 18px
+			height: 22px
+			margin-top: -11px
+			margin-left: -7px
+			top: 50%
+			left: 50%
 	&-box
 		display: inline-block
 		background-color: #f1efef
