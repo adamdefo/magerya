@@ -31,6 +31,12 @@
           display: none
 
 // блок с ссылкой на канал
+.container_youtube
+  @media(max-width: 767px)
+    margin-top: 30px
+    background: url('../img/youtube-bg@2x.png') center center no-repeat
+    background-size: cover
+    padding: 30px 15px !important
 .youtube
   display: flex
   align-items: center
@@ -40,9 +46,9 @@
   padding: 0 100px
   height: 157px
   @media(max-width: 767px)
-    background-size: cover
-    padding: 0 20px
-    height: 130px
+    background: none
+    padding: 0
+    height: auto
   &-icon
     @media(max-width: 575px)
       display: none
@@ -145,7 +151,7 @@
   &__youtube
     margin: 40px 0 0
     @media(max-width: 767px)
-      margin: 25px -65px 0
+      margin: 0
   &__play
     content: ''
     position: absolute
