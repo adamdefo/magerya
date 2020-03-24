@@ -110,11 +110,11 @@ section.section.section_team
           div
             img.default(src="img/team/team1.png")
             img.colorful(src="img/team/colorful/team1.png")
-        .team__item(data-name="Сергей Корнеев", data-post="Уролог-андролог", data-link="page_3.html")
+        .team__item(data-name="Сергей Корнеев", data-post="Уролог-андролог", data-link="korneev.html")
           div
             img.default(src="img/team/team2.png")
             img.colorful(src="img/team/colorful/team2.png")
-        .team__item(data-name="Илья Магеря", data-post="Врач-эндокринолог", data-link="page_2.html")
+        .team__item(data-name="Илья Магеря", data-post="Врач-эндокринолог", data-link="magerya.html")
           div
             img.default(src="img/team/team3.png")
             img.colorful(src="img/team/colorful/team3.png")
@@ -294,7 +294,7 @@ section.section.section_feedback
   .container
     .feedback__wrapper
       .col-9.col-xs-12.feedback
-        .feedback__avatar.col-hidden-xs
+        .feedback__avatar
           img(src="./img/photo-svetlana@2x.png")
         .feedback__content
           .ttl.ttl_h3 Моисеева Светлана <br>ответит на ваши вопросы
@@ -308,8 +308,11 @@ section.section.section_profilacticum
     .row
       .col.col-12
         .item.item_profilacticum
-          .col-5.col-xs-12
+          .img
             .ttl.ttl_h3 Консультация без оплаты
+            img(src="./img/app@2x.png")
+          .col-5.col-xs-12
+            .ttl.ttl_h3.col-hidden-xs Консультация без оплаты
             .txt
               p Наша клиника разработала мобильное приложение, которое анализирует биометрические и биохимичские показатели крови и умееть выявлять факторы риска по каждому анализу , давать рекомендации по питанию, физическим нагрузками и предлагать витаминотерапия для коррекции показателей при легких паталогиях. Сайт приложения <a href="http://www.profilaktikum.com" target="_blank">profilaktikum.com</a>
               p Карманный эндокринолог по ссылке ниже:
@@ -318,8 +321,6 @@ section.section.section_profilacticum
                   img(src="./img/appstore.png")
                 a(href="https://play.google.com/store/apps/details?id=com.magerya.profilaktikum", target="_black")
                   img(src="./img/google-play.png")
-          .img.col-hidden-xs
-            img(src="./img/app@2x.png")
 
 section.section.section_instagram
   .container

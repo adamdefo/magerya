@@ -30,6 +30,7 @@
         & .insta
           display: none
 
+// блок с ссылкой на канал
 .youtube
   display: flex
   align-items: center
@@ -47,6 +48,8 @@
       display: none
   &-link
     margin-left: 34px
+    overflow: hidden
+    text-overflow: ellipsis
     @media(max-width: 575px)
       margin-left: 0
     &_ttl
@@ -156,16 +159,17 @@
     justify-content: flex-start
     align-items: normal
   &__channel
-    display: flex
-    flex: 1 0 auto
     width: 50px
     height: 50px
-    background: #dedede url('../img/1kanal.png') center center no-repeat
-    background-size: containt
+    background-color: #dedede
+    background-image: url('../img/1kanal.png')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: contain
     border-radius: 50%
     margin-right: 15px
     &_2
-      background: #dedede url('../img/kub.png') center center no-repeat
+      background-image: url('../img/kub.png')
 
 .step
   height: 270px
@@ -262,9 +266,17 @@
         right: -35px
   &_profilacticum
     margin-bottom: 0
+    flex-direction: row-reverse
     & .img
       width: 468px
       margin-left: 55px
+      @media(max-width: 575px)
+        width: 100%
+        margin-left: 0
+      & .ttl
+        display: none
+        @media(max-width: 575px)
+          display: block
       & img
         border-radius: 0
     & .btn-box
@@ -279,23 +291,28 @@
   border-radius: 100px 0 100px 0
   color: #ffffff
   padding: 52px 30px 66px 100px
+  @media(max-width: 767px)
+    display: block
+    padding: 30px 0
+    text-align: center
   @media(max-width: 575px)
     background-image: none
     border-radius: 0
-    padding: 15px 0
   &__wrapper
     display: flex
     justify-content: center
   &__avatar
     width: 100px
     margin-right: 35px
+    @media(max-width: 767px)
+      margin: 0 auto
   & .ttl, & .subttl
     color: #ffffff
   &__btn-box
     margin-top: 20px
     & .btn + .btn
       margin-left: 20px
-    @media(max-width: 575px)
+    @media(max-width: 767px)
       text-align: center
       & .btn
         width: 80%
@@ -341,7 +358,7 @@
       width: 100%
   & .insta-pic
     position: absolute
-    @media(max-width: 575px)
+    @media(max-width: 767px)
       display: none
     &_1
       top: -45px
