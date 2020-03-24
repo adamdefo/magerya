@@ -30,6 +30,38 @@
         & .insta
           display: none
 
+.youtube
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  background: url('../img/youtube-bg@2x.png') center center no-repeat
+  background-size: contain
+  padding: 0 100px
+  height: 157px
+  @media(max-width: 767px)
+    background-size: cover
+    padding: 0 20px
+    height: 130px
+  &-icon
+    @media(max-width: 575px)
+      display: none
+  &-link
+    margin-left: 34px
+    @media(max-width: 575px)
+      margin-left: 0
+    &_ttl
+      font-size: 2rem
+      line-height: 3rem
+      color: #ffffff
+      margin-bottom: 5px
+  &-arrow
+    display: flex
+    flex: auto
+    align-items: center
+    justify-content: flex-end
+    @media(max-width: 575px)
+      display: none
+
 .service
   position: relative
   text-align: center
@@ -109,6 +141,8 @@
     text-align: center
   &__youtube
     margin: 40px 0 0
+    @media(max-width: 767px)
+      margin: 25px -65px 0
   &__play
     content: ''
     position: absolute
@@ -127,9 +161,11 @@
     width: 50px
     height: 50px
     background: #dedede url('../img/1kanal.png') center center no-repeat
-    background-size: cover
+    background-size: containt
     border-radius: 50%
     margin-right: 15px
+    &_2
+      background: #dedede url('../img/kub.png') center center no-repeat
 
 .step
   height: 270px

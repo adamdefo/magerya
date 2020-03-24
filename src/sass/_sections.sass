@@ -7,6 +7,7 @@
     @media(max-width: 575px)
       margin-bottom: 25px
   &_promo
+    background-color: #f6f6f6
     height: 502px
     @media(max-width: 575px)
       background-color: #faf8f5
@@ -69,14 +70,16 @@
         top: 312px
         right: 65px
         width: 202px
-    // &:after
-    //   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #f6f6f6);
-    //   content: '';
-    //   position: absolute;
-    //   top: 0;
-    //   right: 0;
-    //   height: 100%;
-    //   width: 100px;
+    &:after
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #f6f6f6)
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      height: 100%
+      width: 100px
+      @media(max-width: 575px)
+        display: none
   &_services
     padding: 50px 0 25px
   &_team
@@ -93,12 +96,13 @@
     & .col:hover
       z-index: 10
     &_list
+      padding-top: 50px
       padding-bottom: 150px
       z-index: 9
     & .container
       padding: 0 50px
     & .section__title
-      margin-bottom: 8px
+      margin-bottom: 20px
   &_feedback
     margin-top: -150px
     z-index: 15
