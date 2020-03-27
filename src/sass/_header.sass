@@ -6,19 +6,18 @@
     display: flex
     align-items: center
     flex: 1 1 auto
+    justify-content: space-between
     height: 86px
   &__item
     display: flex
+    flex: auto
     align-items: center
-    margin-left: 68px
-    @media(max-width: 575px)
-      margin-left: 0
     &_logo
-      margin-left: 0
       @media(max-width: 575px)
         max-width: 134px
+    &_contacts
+      justify-content: center
     &_auth
-      flex: auto
       justify-content: flex-end
       & .btn
         padding: 15px 20px
