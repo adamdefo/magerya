@@ -67,56 +67,41 @@ $(function() {
 
   $('.js-phone').mask('+7(999)999-99-99');
 
+  var $formList = $('.js-form');
+  var $formInputs = $formList.find('input');
+
   // отправка формы
   $('.js-submit-form').on('click', function(event) {
-    alert('Отправка формы!');
-		event.preventDefault();
-		// var form = $(this).parent().parent();
-		// var $name = form.find('[name="name"]');
-		// var $phone = form.find('[name="phone"]');
+    event.preventDefault();
+    var form = $(this).parent().parent().parent();
+    var $name = form.find('[name="name"]');
+    var $phone = form.find('[name="phone"]');
 
-		// var $formItems = form.find('.form__item');
+    if ($name.val() != '' &&  $phone.val() != '') {
+      var requestParams = {
+        name: $name.val(),
+        phone: $phone.val()
+      };
 
-		// var requestParams = {
-		// 	name: $name.val(),
-		// 	phone: $phone.val()
-		// };
-
-		// $.ajax({
-		// 	async: true,
-		// 	type: "POST",
-		// 	url: "/ajax/order.php",
-		// 	dataType: "json",
-		// 	data: requestParams,
-		// 	success: function(response) {
-		// 		console.log(response)
-		// 		orderForm.find('.order__form-answer').removeClass('hide');
-		// 		orderForm.find('.order__form-answer > .ttl').text(response.message);
-		// 		form.addClass('hide');
-		// 		setTimeout(function() {
-		// 			orderForm.find('.order__form-answer').fadeOut('slow');
-		// 		}, 3000);
-		// 	},
-		// 	error: function(error) {
-		// 		console.log(error)
-		// 	}
-		// });
-
-		// orderForm.find('.order__form-answer').removeClass('hide');
-		// orderForm.find('.order__form-answer > .ttl').text('Спасибо! Ваша заявка отправлена.');
-		// form.addClass('hide');
-		// setTimeout(function() {
-		// 	orderForm.find('.order__form-answer').fadeOut('slow');
-		// }, 3000);
-
-		// (function() {
-		// 	requestParams = {};
-		// 	$name.val('');
-		// 	$phone.val('');
-		// 	$email.val('');
-		// 	$formItems.removeClass('form__item_active', 'form__item_focused');
-		// })();
-
-		return false;
-	});
+      $.ajax({
+        async: true,
+        type: "POST",
+        url: "https://magerya.ru/api/v1/core/feedback",
+        // dataType: "json",
+        data: requestParams,
+        success: function(response) {
+          alert('Спасибо. Наш менеджер Вам перезвонит.');
+          $.each($formInputs, function(idx, input) {
+            $(input).val('');
+          });
+        },
+        error: function(error) {
+          console.log(error)
+        }
+      });
+    } else {
+      alert('Ошибка! Не заполнены поля формы.');
+    }
+    return false;
+  });
 });

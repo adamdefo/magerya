@@ -134,13 +134,13 @@ section.section.section_form.section_form_1
     .section__title
         h2.ttl.ttl_h2 Проконсультируем по вашей проблеме и подберём оптимальный план лечения
         .subttl Оставьте контактные данные
-    form#form-1.form
+    form#form-1.form.js-form
       .form__alert
       .row
         .col.col-4.col-xs-12
-          input.ui-input(type="text", placeholder="Имя", required)
+          input.ui-input(type="text", name="name", placeholder="Имя", required)
         .col.col-4.col-xs-12
-          input.ui-input.js-phone(type="text", placeholder="Телефон", required)
+          input.ui-input.js-phone(type="text", name="phone", placeholder="Телефон", required)
         .col.col-4.col-xs-12.form__btn
           button.btn.js-submit-form(type="submit") Отправить
 
@@ -264,13 +264,13 @@ section.section.section_form.section_form_2
     .section__title
         h2.ttl.ttl_h2 Проконсультируем по вашей проблеме и подберём оптимальный план лечения
         .subttl Оставьте контактные данные
-    form#form-2.form
+    form#form-2.form.js-form
       .form__alert
       .row
         .col.col-4.col-xs-12
-          input.ui-input.ui-input_border(type="text", placeholder="Имя", required)
+          input.ui-input.ui-input_border(type="text", name="name", placeholder="Имя", required)
         .col.col-4.col-xs-12
-          input.ui-input.ui-input_border.js-phone(type="text", placeholder="Телефон", required)
+          input.ui-input.ui-input_border.js-phone(type="text", name="phone", placeholder="Телефон", required)
         .col.col-4.col-xs-12.form__btn
           button.btn.js-submit-form(type="submit") Отправить
 
