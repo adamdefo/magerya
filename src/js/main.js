@@ -65,6 +65,8 @@ $(function() {
     });
   }
 
+  $('.js-phone').mask('+7(999)999-99-99');
+
   // отправка формы
   $('.js-submit-form').on('click', function(event) {
     alert('Отправка формы!');
