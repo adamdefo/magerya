@@ -8,7 +8,7 @@ section.section.section_promo
             a.btn(href="https://magerya.ru/doctors")
               i.icon.icon_consultation
               span Виды консультаций
-            a.btn.btn_gold(href="tel:+79182971555" target="_blank")
+            a.btn.btn_gold(href="#anchor-form")
               i.icon.icon_phone-white
               span Связаться с нами
       .col.col-7.col-xs-12.promo-msg
@@ -44,7 +44,7 @@ section.section.section_services
             img(src="img/services/svc-2@2x.jpg")
           .service__readmore
             button(type="button")
-          .service__title Консультация в области зачатие, вынашивание <br>и рождение здорового ребёнка
+          .service__title Зачатие, вынашивание <br>и рождение здорового ребёнка
       .col.col-3.col-sm-6.col-xs-12.col-hidden.col-show-xs
         .service
           .service__picture
@@ -129,7 +129,7 @@ section.section.section_team
         button.team-slider__arrow.team-slider__arrow_next
 
 //- форма 1
-section.section.section_form.section_form_1
+section#anchor-form.section.section_form.section_form_1
   .container
     .section__title
         h2.ttl.ttl_h2 Проконсультируем по вашей проблеме и подберём оптимальный план лечения
@@ -142,7 +142,7 @@ section.section.section_form.section_form_1
         .col.col-4.col-xs-12
           input.ui-input.js-phone(type="text", name="phone", placeholder="Телефон", required)
         .col.col-4.col-xs-12.form__btn
-          button.btn.js-submit-form(type="submit") Отправить
+          button.btn.js-submit-form(type="submit", onclick="ym(45942027, 'reachGoal', 'order1');") Отправить
 
 section#anchor-1.section.section_video
   .container
@@ -212,7 +212,7 @@ section.section.section_how-to-work
               div
                 img(src="./img/steps/login.svg")
             .step__ttl.ttl.ttl_h4 Зарегистрироваться
-            .txt Вы мгновенно имеете доступ к услугам, получив код подтверждения на свой номер телефона! - Зарегистрируйтесь на сайте, нажав кнопку в правом верхнем углу
+            .txt Зарегистрируйтесь на сайте, нажав кнопку в правом верхнем углу.
       .col.col-4.col-sm-6.col-xs-12
         .step
           .step__wrap
@@ -272,7 +272,7 @@ section.section.section_form.section_form_2
         .col.col-4.col-xs-12
           input.ui-input.ui-input_border.js-phone(type="text", name="phone", placeholder="Телефон", required)
         .col.col-4.col-xs-12.form__btn
-          button.btn.js-submit-form(type="submit") Отправить
+          button.btn.js-submit-form(type="submit", onclick="ym(45942027, 'reachGoal', 'order1');") Отправить
 
 section.section.section_how-to-work.section_how-to-work_list
   .container
@@ -308,8 +308,8 @@ section.section.section_how-to-work.section_how-to-work_list
       .col-5.col-sm-12.col-xs-12
         .ttl.ttl_h3 Без очередей
         .txt
-          p Услуга предполагает собой удобный онлайн формат в чате в личном кабинете пациента на сайте, или в мобильном приложении. Подробные рекомендации включает в себя видео с объяснениями факторов риска, комментарии по анализам, ссылки на препараты, программу сбалансированного питания, упражнения.
-          p Все данные надежно защещены и хранятся в доступной для клиента медицинской карте со всеми рекомендациями и динамикой сданных анализов.
+          p Услуга предполагает удобный онлайн формат в чате в личном кабинете пациента на сайте или в мобильном приложении. Подробные рекомендации включает в себя видео с объяснениями факторов риска, комментарии по анализам, ссылки на препараты, программу сбалансированного питания, упражнения.
+          p Все данные надежно защищены и хранятся в доступной для клиента медицинской карте со всеми рекомендациями и динамикой сданных анализов.
       .img
         .img-icon
           img(src="./img/icons/online-icon.svg")
@@ -321,7 +321,7 @@ section.section.section_feedback
       .col-9.col-xs-12.feedback
         .feedback__avatar
           img(src="./img/photo-svetlana@2x.png")
-          div менеджер
+          div администратор
         .feedback__content
           .ttl.ttl_h3 Моисеева Светлана <br>ответит на ваши вопросы
           .subttl Свяжитесь с нами любым удобным способом.
@@ -535,3 +535,19 @@ section.section.section_statistic
             .stats__head
               .stats__number 2
               .stats__subttl мобильных приложения <br>в топ-чартах Apple Store & Google Play
+
+//- форма 3
+section.section.section_form
+  .container
+    .section__title
+        h2.ttl.ttl_h2 Проконсультируем по вашей проблеме и подберём оптимальный план лечения
+        .subttl Оставьте контактные данные
+    form#form-1.form.js-form
+      .form__alert
+      .row
+        .col.col-4.col-xs-12
+          input.ui-input(type="text", name="name", placeholder="Имя", required)
+        .col.col-4.col-xs-12
+          input.ui-input.js-phone(type="text", name="phone", placeholder="Телефон", required)
+        .col.col-4.col-xs-12.form__btn
+          button.btn.js-submit-form(type="submit", onclick="ym(45942027, 'reachGoal', 'order1');") Отправить
