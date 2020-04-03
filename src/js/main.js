@@ -104,4 +104,16 @@ $(function() {
     }
     return false;
   });
+
+  var $logo = $('.js-logo');
+  var $login = $('.js-login'), $register = $('.js-register'), $footerLinkList = $('.js-footer-link');
+  var url = location.href.match(/\?.*/);
+  if (Array.isArray(url)) {
+    $logo.attr('href', '/' + url[0]);
+    $login.attr('href', 'https://auth.magerya.ru/sign-in' + url[0]);
+    $register.attr('href', 'https://auth.magerya.ru/sign-up' + url[0]);
+    $.each($footerLinkList, function(idx, link) {
+      $(link).attr('href', $(link).attr('href') + url[0]);
+    });
+  }
 });
