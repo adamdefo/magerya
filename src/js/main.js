@@ -12,9 +12,9 @@ $(function() {
     dots: false,
     infinite: true,
     centerMode: true,
-    centerPadding: '240px',
+    centerPadding: '0px',
     focusOnSelect: false,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     prevArrow: '.team-slider__arrow_prev',
     nextArrow: '.team-slider__arrow_next',
@@ -85,11 +85,12 @@ $(function() {
 
       $.ajax({
         async: true,
-        type: "POST",
-        url: "https://magerya.ru/api/v1/core/feedback",
+        type: 'POST',
+        url: 'https://magerya.ru/api/v1/core/feedback',
         // dataType: "json",
         data: requestParams,
         success: function(response) {
+          // gtag('event','send',{'event_category':'order1','event_label':''});
           alert('Спасибо. Наш менеджер Вам перезвонит.');
           $.each($formInputs, function(idx, input) {
             $(input).val('');

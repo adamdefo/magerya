@@ -98,10 +98,10 @@ section.section.section_team
       h2.ttl.ttl_h2 Наша команда
     .team-slider
       .team-slider__slider
-        .team__item(data-name="Даниил Горенко", data-post="Руководитель IT")
+        .team__item(data-name="Анастасия Дьяченко", data-post="Администратор")
           div
-            img.default(src="img/team/team1.png")
-            img.colorful(src="img/team/colorful/team1.png")
+            img.default(src="img/team/team7.jpg")
+            img.colorful(src="img/team/colorful/team7.jpg")
         .team__item(data-name="Сергей Корнеев", data-post="Уролог-андролог", data-link="korneev.html")
           div
             img.default(src="img/team/team2.png")
@@ -110,14 +110,22 @@ section.section.section_team
           div
             img.default(src="img/team/team3.png")
             img.colorful(src="img/team/colorful/team3.png")
-        .team__item(data-name="Валентина Магеря", data-post="Заместитель директора")
+        .team__item(data-name="Алиса Луценко", data-post="Ассистент")
           div
-            img.default(src="img/team/team4.png")
-            img.colorful(src="img/team/colorful/team4.png")
+            img.default(src="img/team/team6.jpg")
+            img.colorful(src="img/team/colorful/team6.jpg")
         .team__item(data-name="Светлана Моисеева", data-post="Администратор")
           div
             img.default(src="img/team/team5.png")
             img.colorful(src="img/team/colorful/team5.png")
+        .team__item(data-name="Валентина Магеря", data-post="Заместитель директора")
+          div
+            img.default(src="img/team/team4.png")
+            img.colorful(src="img/team/colorful/team4.png")
+        .team__item(data-name="Даниил Горенко", data-post="Руководитель IT")
+          div
+            img.default(src="img/team/team1.png")
+            img.colorful(src="img/team/colorful/team1.png")
       .team-slider__arrows
         .team-slider__caption
           .label Врач-эндокринолог
@@ -134,7 +142,7 @@ section#anchor-form.section.section_form.section_form_1
     .section__title
         h2.ttl.ttl_h2 Проконсультируем по вашей проблеме и подберём оптимальный план лечения
         .subttl Оставьте контактные данные
-    form#form-1.form.js-form
+    form#form-1.form.js-form(onsubmit="gtag('event', 'form_submit', { 'event_category': 'order1', 'event_action': 'send' });")
       .form__alert
       .row
         .col.col-4.col-xs-12
@@ -142,7 +150,7 @@ section#anchor-form.section.section_form.section_form_1
         .col.col-4.col-xs-12
           input.ui-input.js-phone(type="text", name="phone", placeholder="Телефон", required)
         .col.col-4.col-xs-12.form__btn
-          button.btn.js-submit-form(type="submit", onclick="ym(61454317, 'reachGoal', 'order1'); ga('send', 'event', 'order1');") Отправить
+          button.btn.js-submit-form(type="submit", onclick="ym(61454317, 'reachGoal', 'order1');") Отправить
 
 section#anchor-1.section.section_video
   .container
@@ -264,7 +272,7 @@ section.section.section_form.section_form_2
     .section__title
         h2.ttl.ttl_h2 Проконсультируем по вашей проблеме и подберём оптимальный план лечения
         .subttl Оставьте контактные данные
-    form#form-2.form.js-form
+    form#form-2.form.js-form(onsubmit="gtag('event', 'form_submit', { 'event_category': 'order1', 'event_action': 'send' });")
       .form__alert
       .row
         .col.col-4.col-xs-12
@@ -272,7 +280,7 @@ section.section.section_form.section_form_2
         .col.col-4.col-xs-12
           input.ui-input.ui-input_border.js-phone(type="text", name="phone", placeholder="Телефон", required)
         .col.col-4.col-xs-12.form__btn
-          button.btn.js-submit-form(type="submit", onclick="ym(61454317, 'reachGoal', 'order1'); ga('send', 'event', 'order1');") Отправить
+          button.btn.js-submit-form(type="submit", onclick="ym(61454317, 'reachGoal', 'order1');") Отправить
 
 section.section.section_how-to-work.section_how-to-work_list
   .container
@@ -542,7 +550,7 @@ section.section.section_form
     .section__title
         h2.ttl.ttl_h2 Проконсультируем по вашей проблеме и подберём оптимальный план лечения
         .subttl Оставьте контактные данные
-    form#form-1.form.js-form
+    form#form-3.form.js-form(onsubmit="gtag('event', 'form_submit', { 'event_category': 'order1', 'event_action': 'send' });")
       .form__alert
       .row
         .col.col-4.col-xs-12
@@ -550,4 +558,4 @@ section.section.section_form
         .col.col-4.col-xs-12
           input.ui-input.js-phone(type="text", name="phone", placeholder="Телефон", required)
         .col.col-4.col-xs-12.form__btn
-          button.btn.js-submit-form(type="submit", onclick="ym(61454317, 'reachGoal', 'order1'); ga('send', 'event', 'order1');") Отправить
+          button.btn.js-submit-form(type="submit", onclick="ym(61454317, 'reachGoal', 'order1');") Отправить
